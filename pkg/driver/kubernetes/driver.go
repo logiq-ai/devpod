@@ -150,6 +150,7 @@ func (k *KubernetesDriver) CommandDevContainer(ctx context.Context, workspaceId,
 		Stdin:     stdin,
 		Stdout:    stdout,
 		Stderr:    stderr,
+		Log:       k.Log,
 	})
 }
 
